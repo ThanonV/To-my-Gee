@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To My Gee</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Sarabun', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .heart {
+      font-size: 3em;
+      margin: 20px 0;
+      animation: pulse 1.2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .button-group {
+      margin-top: 30px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 10px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #e91e63;
+      color: white;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background-color: #d81b60;
+    }
+
+    iframe {
+      margin-top: 40px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>To My Gee</h1>
+  <div class="heart">❤️</div>
+  <p>เป็นแฟนกันนะครับ</p>
+
+  <div class="button-group">
+    <button onclick="alert('เย่! เราเป็นแฟนกันแล้วนะ 💖')">Yes</button>
+    <button onclick="alert('ไม่ว่าเลือกปุ่มไหน เราก็จะเป็นแฟนกันอยู่ดีนะ 🥰')">Yes</button>
+  </div>
+
+  <iframe style="border: none;" 
+          src="https://open.spotify.com/embed/track/6MctLjIJf7y1vaiZJ81ggl?utm_source=generator" 
+          width="300" height="80" frameborder="0" 
+          allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+  </iframe>
+</body>
+</html>
